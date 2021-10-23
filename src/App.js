@@ -18,7 +18,7 @@ function App() {
           <Home />
         </Route>  
 
-        <Route exact path="/">
+        <Route exact path="/Game">
           <Game />
         </Route>  
         
@@ -37,8 +37,8 @@ function App() {
 function Home() {
   return (
     <div>
-              <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
           <p>
             Welcome to <code>HackShop!</code>    <br/>
             <Link to="/">This is a link to the homepage!</Link><br/>
