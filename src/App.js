@@ -7,6 +7,7 @@ import React from "react";
 import Signup from "./signup.js"
 import Login from "./Login.js"
 import Dashboard from "./Dashboard.js"
+import Challenge from "./Challenge.js"
 
 
 import {
@@ -41,6 +42,9 @@ function App() {
           <Login />
         </Route>
         
+        <Route exact path="/challenge">
+          <Challenge />
+        </Route>
         
       </Switch>
 
@@ -61,7 +65,8 @@ function Home() {
             <Link to="/">This is a link to the homepage!</Link><br/>
             <Link to="/dashboard">This is a link to a dashboard!</Link><br/>
             <Link to="/signup">This is a link to a create account!</Link><br/>
-            <Link to="/login">This is a link to a login</Link>
+            <Link to="/login">This is a link to a login</Link><br/>
+            <Link to="/challenge">This is a link to a fun shopping challenge!</Link>
           </p>
           <a
             className="App-link"
