@@ -3,14 +3,8 @@ import { Card, Button, Alert, Jumbotron, Navbar, Nav, Container, Row, Col } from
 import { useAuth } from './contexts/AuthContext'
 import { useHistory } from 'react-router-dom'
 
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
 
-export default function Dashboard() {
+export default function Games() {
 
     const [error, setError] = useState("")
     const { currentUser, logout } = useAuth()
@@ -30,46 +24,40 @@ export default function Dashboard() {
     return (
         <div className="App-header">
             <h1 style={{textAlign:"center", padding:"2vh 0 0 0"}}>
-                Welcome to the Dashboard!
+                Games!
             </h1>
             <Row style={{padding:"2vh 0 0 0", justifyContent:"center"}}>
                 <Col xs={1}>
                 </Col>
                 <Col xs={3}>
-                <Link to="/games">
-                <Card style={{color:"black"}}  className="CardStyle">
+            <Card style={{color:"black"}}  className="CardStyle">
                 <Card.Header as="h5" style={{textAlign:"center"}}>
-                    Games
+                    HangMan!
                 </Card.Header>
                 <Card.Body >
-                    Looking for a way to spice up your shopping trip? Check out our games, and get yourself exclusive offers on top of a great time!
-                </Card.Body>
-                </Card>
-                </Link>
-            </Col>
-            <Col xs={3}>
-            <Link to="/leaderboard">
-            <Card style={{color:"black"}}  className="CardStyle">
-                <Card.Header as="h5" style={{textAlign:"center"}}>
-                    Leaderboard
-                </Card.Header>
-                <Card.Body>
-                    See how you and other in your group stack up against each other. A little competition never hurt anyone!
+                    The classic game, but instead of random words, it's items from your shopping list!
                 </Card.Body>
             </Card>
-            </Link>
             </Col>
             <Col xs={3}>
-            <Link to="/collections">
             <Card style={{color:"black"}}  className="CardStyle">
                 <Card.Header as="h5" style={{textAlign:"center"}}>
-                    Collections
+                    Shopping Challenges
                 </Card.Header>
                 <Card.Body>
-                    This is some text within a card body. Describe our games here.
+                    Want something to think about while shopping? Try out our fun challenges to kick this shopping trip into high gear!
                 </Card.Body>
             </Card>
-            </Link>
+            </Col>
+            <Col xs={3}>
+            <Card style={{color:"black"}}  className="CardStyle">
+                <Card.Header as="h5" style={{textAlign:"center"}}>
+                    Daily Deals
+                </Card.Header>
+                <Card.Body>
+                    Looking for exclusive discounts and coupons? Play games and check out this tab!
+                </Card.Body>
+            </Card>
             </Col>
             <Col xs={1}>
                 </Col>

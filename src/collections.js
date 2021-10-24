@@ -10,7 +10,7 @@ import {
     Link
   } from "react-router-dom";
 
-export default function Dashboard() {
+export default function Collections() {
 
     const [error, setError] = useState("")
     const { currentUser, logout } = useAuth()
@@ -30,37 +30,12 @@ export default function Dashboard() {
     return (
         <div className="App-header">
             <h1 style={{textAlign:"center", padding:"2vh 0 0 0"}}>
-                Welcome to the Dashboard!
+                Your Collections
             </h1>
             <Row style={{padding:"2vh 0 0 0", justifyContent:"center"}}>
-                <Col xs={1}>
-                </Col>
-                <Col xs={3}>
-                <Link to="/games">
-                <Card style={{color:"black"}}  className="CardStyle">
-                <Card.Header as="h5" style={{textAlign:"center"}}>
-                    Games
-                </Card.Header>
-                <Card.Body >
-                    Looking for a way to spice up your shopping trip? Check out our games, and get yourself exclusive offers on top of a great time!
-                </Card.Body>
-                </Card>
-                </Link>
+            <Col xs={8}>
             </Col>
             <Col xs={3}>
-            <Link to="/leaderboard">
-            <Card style={{color:"black"}}  className="CardStyle">
-                <Card.Header as="h5" style={{textAlign:"center"}}>
-                    Leaderboard
-                </Card.Header>
-                <Card.Body>
-                    See how you and other in your group stack up against each other. A little competition never hurt anyone!
-                </Card.Body>
-            </Card>
-            </Link>
-            </Col>
-            <Col xs={3}>
-            <Link to="/collections">
             <Card style={{color:"black"}}  className="CardStyle">
                 <Card.Header as="h5" style={{textAlign:"center"}}>
                     Collections
@@ -69,7 +44,6 @@ export default function Dashboard() {
                     This is some text within a card body. Describe our games here.
                 </Card.Body>
             </Card>
-            </Link>
             </Col>
             <Col xs={1}>
                 </Col>

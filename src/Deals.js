@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Text, StyleSheet } from "react-native";
 
 
-const Challenge = () => {
-    const challengelist = ["Romance on a budget!", "Sustainability", "Random Flavor Combination","Give a gift!"];
-    const challengeexp = ["For less than 5 dollars, try to design the most romantic meal possible!", "Replace two of your shopping list items with organic or more environmentally-conscious products.", "Show off your creativity! Find two weird flavors that work together!", "Give a gift that shows you care for the people you're shopping with!"]
+const Deals = () => {
+    const challengelist = ["Fruits for all!", "Sustainability!", "Back-to-School Snacking"];
+    const challengeexp = ["All fruits are buy one, get one free.", "Organic products are 25% off store-wide!", "All individual snack-packs are 10% off!"]
     var index  = Math.floor(Math.random()*challengelist.length);
     const [titleText, setTitleText] = useState(challengelist[index]);
   const bodyText = challengeexp[index];
@@ -37,4 +37,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Challenge;
+export default Deals;
