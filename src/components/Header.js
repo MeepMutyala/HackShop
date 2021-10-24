@@ -23,8 +23,8 @@ const Header = () => {
 
   return (
     <>
-      <h1>React Hangman Games</h1>
-      <p>Find the hidden word!</p>
+      <h1>Shopping Hangman</h1>
+      <p>Guess the word!</p>
       <button onClick={HandleButton}>Rules</button>
     </>
   );
