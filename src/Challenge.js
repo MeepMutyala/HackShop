@@ -3,8 +3,8 @@ import { Text, StyleSheet } from "react-native";
 
 
 const Challenge = () => {
-    const challengelist = ["Romance on a budget!", "Sustainability", "Random Flavor Combination"];
-    const challengeexp = ["For less than 5 dollars, try to design the most romantic meal possible!", "Replace two of your shopping list items with organic or more environmentally-conscious products.", "Show off your creativity! Find two weird flavors that work together!"]
+    const challengelist = ["Romance on a budget!", "Sustainability", "Random Flavor Combination","Give a gift!"];
+    const challengeexp = ["For less than 5 dollars, try to design the most romantic meal possible!", "Replace two of your shopping list items with organic or more environmentally-conscious products.", "Show off your creativity! Find two weird flavors that work together!", "Give a gift that shows you care for the people you're shopping with!"]
     var index  = Math.floor(Math.random()*challengelist.length);
     const [titleText, setTitleText] = useState(challengelist[index]);
   const bodyText = challengeexp[index];
