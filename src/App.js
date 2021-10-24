@@ -8,6 +8,7 @@ import Signup from "./signup.js"
 import Login from "./Login.js"
 import Dashboard from "./Dashboard.js"
 import Challenge from "./Challenge.js"
+import Hangman from "./Hangman.js"
 
 
 import {
@@ -45,6 +46,10 @@ function App() {
         <Route exact path="/challenge">
           <Challenge />
         </Route>
+
+        <Route exact path="/hangman">
+          <Hangman />
+        </Route>
         
       </Switch>
 
@@ -66,7 +71,8 @@ function Home() {
             <Link to="/dashboard">This is a link to a dashboard!</Link><br/>
             <Link to="/signup">This is a link to a create account!</Link><br/>
             <Link to="/login">This is a link to a login</Link><br/>
-            <Link to="/challenge">This is a link to a fun shopping challenge!</Link>
+            <Link to="/challenge">This is a link to a fun shopping challenge!</Link><br/>
+            <Link to="/hangman">This is a link to hangman!</Link>
           </p>
           <a
             className="App-link"

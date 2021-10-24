@@ -9,6 +9,7 @@ import Signup from "./signup.js"
 import Login from "./Login.js"
 import Dashboard from "./Dashboard.js"
 import Challenge from "./Challenge.js"
+import Hangman from "./Hangman.js"
 
 
 
@@ -20,6 +21,7 @@ const Routing = () => {
         <Route exact path="./Login" component={Login} />
         <Route exact path="./Dashboard" component={Dashboard} />
         <Route exact path="./Challenge" component={Challenge} />
+        <Route exact path="./Hangman" component={Hangman} />
     </Router>
   )
 }
