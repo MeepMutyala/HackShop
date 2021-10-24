@@ -7,6 +7,10 @@ import {Navbar, Nav, Container, Row, Col, Button} from "react-bootstrap";
 import Signup from "./signup.js"
 import Login from "./Login.js"
 import Dashboard from "./Dashboard.js"
+import Games from "./games.js"
+import Leaderboard from "./leaderboard.js"
+import Collections from "./collections.js"
+
 import styled from "styled-components"
 
 import {
@@ -30,11 +34,11 @@ function App() {
 
     <Router> {/*this is a JSX comment, note the syntax*/}
       <Navbar className ="navBarStyle" variant="dark">
-    <Navbar.Brand href="#home">HackShop</Navbar.Brand>
+    <Navbar.Brand href="/">HackShop</Navbar.Brand>
     <Nav className="me-auto">
     <StyledLink to="/" style={{padding:"1vh 0 0 0"}}>Home</StyledLink>
       <StyledLink to="/login"style={{padding:"1vh 0 0 0"}}>Log in</StyledLink>
-      <StyledLink to="/signup" style={{float: "right"}}><Button variant="danger">Sign up</Button></StyledLink>
+      <StyledLink to="/signup" style={{float: "right"}}><Button variant="primary">Sign up</Button></StyledLink>
     </Nav>
   </Navbar>
     <AuthProvider>
@@ -57,8 +61,23 @@ function App() {
           <Login />
         </Route>
         
-        
-      </Switch>
+        <Route exact path="/games">
+          <Games />
+        </Route>
+
+      <Route exact path="/collections">
+          <Collections />
+        </Route>
+
+        <Route exact path="/leaderboard">
+          <Leaderboard />
+        </Route>
+
+        {/* <Route exact path="/hangman">
+          <Hangman />
+        </Route> */}
+
+</Switch>
 
 
       </AuthProvider>

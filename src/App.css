@@ -13,9 +13,9 @@
   }
 }
 
+
 .App-header {
-  background-color: #E3A54F;
-  font-size: calc(10px + 2vmin);
+  background-color: #2A9D8F;
   color: white;
   height: 95vh;
 }
@@ -24,18 +24,22 @@
   justify-content: right;
   align-items: right;
   float: right;
-  background-color: blue;
 
 }
 
 .navBarStyle {
-  background-color: #572B22;
+  background-color: #264653;
   padding: 0 0 1vh 3vh;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.CardStyle {
+  height: 75vh;
+}
+
 
 @keyframes App-logo-spin {
   from {
