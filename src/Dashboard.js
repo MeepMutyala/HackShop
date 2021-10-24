@@ -42,7 +42,7 @@ export default function Dashboard() {
                     Games
                 </Card.Header>
                 <Card.Body >
-                    This is some text within a card body. Describe our games here.
+                    Looking for a way to spice up your shopping trip? Check out our games, and get yourself exclusive offers on top of a great time!
                 </Card.Body>
                 </Card>
                 </Link>
@@ -54,7 +54,7 @@ export default function Dashboard() {
                     Leaderboard
                 </Card.Header>
                 <Card.Body>
-                    This is some text within a card body. Describe our games here.
+                    See how you and other in your group stack up against each other. A little competition never hurt anyone!
                 </Card.Body>
             </Card>
             </Link>

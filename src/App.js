@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from "react";
 // import React, { useRef } from 'react'
-import {Navbar, Nav, Container, Row, Col, Button} from "react-bootstrap";
+import {Navbar, Nav, Container, Row, Col, Button, Card} from "react-bootstrap";
 
 import Signup from "./signup.js"
 import Login from "./Login.js"
@@ -10,7 +10,9 @@ import Dashboard from "./Dashboard.js"
 import Games from "./games.js"
 import Leaderboard from "./leaderboard.js"
 import Collections from "./collections.js"
-
+import Challenge from "./Challenge.js"
+import Hangman from "./Hangman.js"
+import Deals from "./Deals.js"
 import styled from "styled-components"
 
 import {
@@ -73,9 +75,17 @@ function App() {
           <Leaderboard />
         </Route>
 
-        {/* <Route exact path="/hangman">
+        <Route exact path="/hangman">
           <Hangman />
-        </Route> */}
+        </Route>
+
+        <Route exact path="/challenge">
+          <Challenge />
+        </Route>
+
+        <Route exact path="/deals">
+          <Deals />
+        </Route>
 
 </Switch>
 
@@ -102,12 +112,15 @@ function Home() {
          <br />
          <div style={{float: "right", textAlign:"right", margin:"0 8vh 0 0"}}>
          <h1>
-            Welcome to <code><a href="https://github.com/MeepMutyala/HackShop">HackShop!</a></code><br/>
+            Welcome to <code><a href="https://github.com/MeepMutyala/HackShop">HackShop!</a></code><br/><br/>
 
-            <Link to="/">This is a link to the homepage!</Link><br/>
-            <Link to="/dashboard">This is a link to a dashboard!</Link><br/>
-            <Link to="/signup">This is a link to a create account!</Link><br/>
-            <Link to="/login">This is a link to a login</Link>
+            {/* <LThis is a link to the homepage!<br/> */}
+            <Link to="/dashboard">Dashboard</Link><br/><br/>
+            {/* <Link to="/signup">This is a link to a create account!</Link><br/> */}
+            {/* <Link to="/login">This is a link to a login</Link><br/> */}
+            <Link to="/challenge">Shopping Challenges!</Link><br/>
+            <Link to="/hangman">Hangman!</Link><br/>
+            <Link to="/deals">Daily Deals!</Link>
           </h1>
           </div>
           </Col>
