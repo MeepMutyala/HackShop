@@ -35,27 +35,27 @@ export default function Games() {
                     HangMan!
                 </Card.Header>
                 <Card.Body >
-                    Describe our game here.
+                    The classic game, but instead of random words, it's items from your shopping list!
                 </Card.Body>
             </Card>
             </Col>
             <Col xs={3}>
             <Card style={{color:"black"}}  className="CardStyle">
                 <Card.Header as="h5" style={{textAlign:"center"}}>
-                    Daily Challenge
+                    Shopping Challenges
                 </Card.Header>
                 <Card.Body>
-                    This is some text within a card body. Describe our games here.
+                    Want something to think about while shopping? Try out our fun challenges to kick this shopping trip into high gear!
                 </Card.Body>
             </Card>
             </Col>
             <Col xs={3}>
             <Card style={{color:"black"}}  className="CardStyle">
                 <Card.Header as="h5" style={{textAlign:"center"}}>
-                    Game 3? or just discounts/coupons
+                    Daily Deals
                 </Card.Header>
                 <Card.Body>
-                    This is some text within a card body. Describe our games here.
+                    Looking for exclusive discounts and coupons? Play games and check out this tab!
                 </Card.Body>
             </Card>
             </Col>
